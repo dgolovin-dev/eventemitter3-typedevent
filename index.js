@@ -52,7 +52,7 @@ export class TypedEvent {
    * @param {object} thisArg 
    */
   once(handler, thisArg=undefined) {
-    this._emitter.once(this._eventName, handler, thisArg);
+    return this._emitter.once(this._eventName, handler, thisArg);
   }
 
   /**
@@ -65,8 +65,6 @@ export class TypedEvent {
 
 }
 
-
-
 /**
  * @param {EventEmitter} emitter
  * @param {EventEmitter.ValidEventTypes} eventName
@@ -74,7 +72,7 @@ export class TypedEvent {
  */
 export const safeEmit = (emitter, eventName, ...args) => {
   let listeners = emitter._events[eventName];
-  if(!listeners) return;
+  if(!listeners) return false;
   if(!(listeners instanceof Array)) {
     listeners = [listeners];
   }
@@ -93,6 +91,7 @@ export const safeEmit = (emitter, eventName, ...args) => {
       }
     }
   }
+  return true;
 }
  
 
