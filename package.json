@@ -1,0 +1,10 @@
+{
+  "name": "eventemitter3-typedevent",
+  "description": "Typed events for eventemitter3.",
+  "version": "0.1.0",
+  "main": "index.js",
+  "type": "module",
+  "devDependencies": {
+    "eventemitter3": "^5.0.0"
+  }
+}
