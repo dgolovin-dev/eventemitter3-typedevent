@@ -10,7 +10,7 @@ I widely use events in my projects and I need to specify signatures for event in
 There is a reserved word `@event` in @jsdoc for that. Unfortunately, VSCode does not support it properly.
 
 It tried many approaches and found a good solution. 
-This is a C#-like events, when every event is an object and have a strict signature.
+This is C#-like events, when every event is an object and have a strict signature.
 I implemented it in the class TypedEvent. Now you can specify and use events this way:
 
 ```javascript
