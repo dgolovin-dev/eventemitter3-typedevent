@@ -29,7 +29,7 @@ Also, the TypedEvent is compatible with the standard emitter code.
 It means, you can easily refactor your project and start using TypedEvent. 
 Typed event won't break the code which is still using emitter directly.
 
-## 2. Error in any listeners interupts execution flow of the code that called the emit.
+## 2. Error in any listener interupts the execution flow of the code that called the emit.
 
 For example, this code:
 ```javascript
