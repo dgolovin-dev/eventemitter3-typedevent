@@ -1,5 +1,5 @@
 # eventemitter3-typedevent
-Proposal for event system.
+Proposal for the js event system.
 
 There are some problems with EventEmitter and with eventemitter3 in particular
 and this solution is created to solve them.
